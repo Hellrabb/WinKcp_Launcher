@@ -184,7 +184,7 @@ bool open_wireguard_udp2raw(void)
 
 bool close_kcp_server(void)
 {
-    char cmdline[] = "taskkill.exe /im kcp-client.exe  /f /im udp2raw.exe  /im speederv2.exe "
+    char cmdline[] = "taskkill.exe /im kcp-client.exe  /f /im udp2raw.exe  /im speederv2.exe /im tinymapper_amd64.exe"
                      "/im brook.exe  /im TunSafe.exe ";
     hide_run_cmd(cmdline);
 
